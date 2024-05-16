@@ -3,10 +3,11 @@
 ![React](https://img.shields.io/badge/-react-000?style=for-the-badge&logo=react)
 ![NextJS](https://img.shields.io/badge/-next.js-000?style=for-the-badge&logo=next.js)
 ![TailwindCSS](https://img.shields.io/badge/-tailwindcss-000?style=for-the-badge&logo=tailwindcss)
+![DaisyUI](https://img.shields.io/badge/-Daisy_UI-000?style=for-the-badge&logo=daisyui)
+![SASS](https://img.shields.io/badge/-SASS-000?style=for-the-badge&logo=sass)
 ![Prisma](https://img.shields.io/badge/-prisma-000?style=for-the-badge&logo=prisma)
 ![MondoDB](https://img.shields.io/badge/-mongoDB-000?style=for-the-badge&logo=mongodb)
 ![GSAP](https://img.shields.io/badge/-GSAP-000?style=for-the-badge&logo=greensock)
-![DaisyUI](https://img.shields.io/badge/-Daisy_UI-000?style=for-the-badge&logo=daisyui)
 
 # Portfolio-NextJS 🌐🧑‍💻
 
