@@ -19,7 +19,7 @@ import "./index.scss";
 
 export default function Header() {
   return (
-    <div className="nav-bar">
+    <div className="nav-bar h-full sticky">
       <Link className="logo" href="/">
         <Image src={LogoImage} alt="Logo" width={100} />
       </Link>

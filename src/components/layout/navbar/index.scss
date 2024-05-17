@@ -1,11 +1,11 @@
 .nav-bar {
   background: #181818;
   width: 65px;
-  height: 100%;
-  position: absolute;
+  height: 100vh !important;
+  // position: absolute;
   top: 0;
   z-index: 99;
-  min-height: 500px;
+  min-height: 100vh;
   font-family: "coolvetica";
 
   svg {
