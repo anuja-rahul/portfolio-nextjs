@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Anuja Rahul - Add Post",
+};
+
 export default function Blog() {
-  return <div>Add blog</div>;
+  return <div>Add Post</div>;
 }
