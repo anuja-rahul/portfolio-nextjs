@@ -10,8 +10,10 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <div className="layout h-auto min-h-screen" data-theme="night">
-        <Header />
-        {children}
+          <Header />
+        <div className="page-content h-auto min-h-screen">
+          {children}
+        </div>
       </div>
     </>
   );

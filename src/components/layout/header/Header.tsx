@@ -1,85 +1,80 @@
+import Link from "next/link";
 import "./../index.scss";
-import LogoImage from "./../../../assets/images/logo-no-background.svg";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faHome,
+  faPen,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faYoutube,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+import LogoImage from "./../../../assets/images/logo-a.png";
+import "./index.scss";
 
 export default function Header() {
   return (
-    <div className="navbar rounded-full bg-sky-950/60 backdrop-blur-xl">
-      <div className="navbar-start">
-        <div className="dropdown rounded-full">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost rounded-full lg:hidden"
+    <div className="nav-bar">
+      <Link className="logo" href="/">
+        <Image src={LogoImage} alt="Logo" width={100} />
+      </Link>
+      <nav>
+        <Link href="/">
+          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        </Link>
+        <Link className="about-link" href="/#about">
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </Link>
+        <Link className="blog-link" href="/blog">
+          <FontAwesomeIcon icon={faPen} color="#4d4d4e" />
+        </Link>
+        <Link className="contact-link" href="/#contact">
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </Link>
+      </nav>
+      <ul>
+        <li>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/anuja-rahul-gunasinghe-83b589266"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-xl bg-base-100 p-2 shadow"
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </Link>
+        </li>
+        <li>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.github.com/anuja-rahul"
           >
-            <li>
-              <a className="rounded-full">Item 1</a>
-            </li>
-            <li>
-              <a className="rounded-full">Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a className="rounded-full">Submenu 1</a>
-                </li>
-                <li>
-                  <a className="rounded-full">Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a className="rounded-full">Item 3</a>
-            </li>
-          </ul>
-        </div>
-        <a className="rounded-full text-xl hover:translate-y-[-3px] transition-[0.6s]">
-          <Image src={LogoImage} height={50} alt="Title" className="py-0" />
-        </a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a className="rounded-full">Item 1</a>
-          </li>
-          <li className="rounded-full">
-            <details>
-              <summary className="rounded-full">Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a className="rounded-full">Submenu</a>
-                </li>
-                <li>
-                  <a className="rounded-full">Submenu</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a className="rounded-full">Item 3</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn rounded-full">Button</a>
-      </div>
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </Link>
+        </li>
+        <li>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://youtube.com"
+          >
+            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+          </Link>
+        </li>
+        <li>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com"
+          >
+            <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }
