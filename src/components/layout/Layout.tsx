@@ -1,4 +1,4 @@
-import Header from "./header/Header";
+import Header from "./navbar/NavBar";
 import "./index.scss";
 import "./../../app/App.scss";
 
