@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./../index.scss";
+// import "./../index.scss";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,15 +19,15 @@ import "./index.scss";
 
 export default function Header() {
   return (
-    <div className="nav-bar h-full sticky">
+    <div className="nav-bar h-screen">
       <Link className="logo" href="/">
         <Image src={LogoImage} alt="Logo" width={100} />
       </Link>
       <nav>
-        <Link href="/">
+        <Link href="/#Hero">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </Link>
-        <Link className="about-link" href="/#about">
+        <Link className="about-link" href="/#About">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </Link>
         <Link className="blog-link" href="/blog">

@@ -1,4 +1,4 @@
-import Header from "./navbar/NavBar";
+import NavBar from "./navbar/NavBar";
 import "./index.scss";
 import "./../../app/App.scss";
 
@@ -9,16 +9,14 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <div className="layout h-auto min-h-screen" data-theme="night">
-        <Header />
-        <div className="page-content h-auto min-h-screen">
-          <span className="">
-            <span className="tags all-tags top-tag-html">&lt;html&gt;</span>
-            <br />
-            <span className="tags top-tags all-tags">&lt;body&gt;</span>
-          </span>
-          {children}
-          <span className="">
+      <div className="layout w-full" data-theme="night">
+        <NavBar />
+        <div className="page-content">
+          <span className="tags all-tags top-tag-html">&lt;html&gt;</span>
+          <br />
+          <span>
+          <span className="tags top-tags all-tags top-tag-body">&lt;body&gt;</span>
+            {children}
             <span className="tags bottom-tags all-tags body-bottom mb-3">
               &lt;/body&gt;
             </span>

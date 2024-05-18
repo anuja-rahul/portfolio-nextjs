@@ -1,18 +1,17 @@
 .nav-bar {
-  background: #181818;
+  background: #0a080f;
   width: 65px;
-  height: 100vh !important;
+  min-height: 100vh !important;
   // position: absolute;
+  position: fixed;
   top: 0;
   z-index: 99;
-  min-height: 100vh;
   font-family: "coolvetica";
 
   svg {
     color: #7d7d7d !important;
     &:hover {
       color: #ffcb74 !important;
-      
     }
   }
 
@@ -20,8 +19,8 @@
     display: block;
     padding: 8px 0;
 
-    &:hover{
-        animation: rubberBand 1s;
+    &:hover {
+      animation: rubberBand 1s;
     }
 
     img {
@@ -94,7 +93,6 @@
       }
 
       &:first-child {
-        
         &::after {
           content: "Home";
         }
@@ -114,10 +112,10 @@
     }
 
     a.contact-link {
-        &:after {
-          content: "Contact";
-        }
+      &:after {
+        content: "Contact";
       }
+    }
 
     a.active {
       svg {

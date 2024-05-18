@@ -1,3 +1,76 @@
+.layout {
+  //   overflow-y: initial !important;
+  //   overflow-y: scroll !important;
+  z-index: 99;
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  margin: 0;
+  font:
+    300 11px/1.4 "Helvetica Neue",
+    "sans-serif";
+  // color: #0a080f;
+  color: #444;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(59, 37, 0, 0.96) 5%,
+      rgb(10, 8, 15) 95%
+    ),
+    url("./../../assets/images/code.jpg") center repeat !important;
+  /* background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 5%, rgb(157, 20, 20) 95%), url('assets/images/code.jpg'); */
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .page-content {
   padding-left: 5rem !important;
+}
+
+// .all-tags {
+//   font-family: "La Belle Aurore", sans-serif;
+//   color: #ffcb74;
+//   opacity: 0.75;
+//   font-size: 0.9rem;
+//   position: sticky;
+
+//   .top-tag-html {
+//     top: 10%;
+//   }
+// }
+
+.all-tags {
+  font-family: "La Belle Aurore", sans-serif;
+  color: #ffcb74;
+  opacity: 0.8;
+  font-size: 0.9rem;
+  position: sticky;
+  pointer-events: none;
+}
+
+.top-tag-html {
+  top: 1%;
+  left: 5%;
+}
+.top-tag-body {
+  top: 2.5%;
+  left: 7%;
+}
+
+.tags {
+  position: sticky;
+  opacity: 0.65;
+}
+
+.body-bottom {
+  bottom: 2.5%;
+  left: 7%;
+}
+
+.bottom-tag-html {
+  bottom: 1%;
+  left: 5%;
 }

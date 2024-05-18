@@ -1,4 +1,6 @@
+import Hero from "@/components/hero/Hero";
 import "./index.scss";
+import About from "@/components/about/About";
 
 export const metadata = {
   title: "Anuja Rahul - Home",
@@ -6,9 +8,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="h-auto min-h-screen">
-      Home Page
-      <section id="Hero" className="h-[100vh]">Hero Text</section>
+    <main className="h-auto min-h-screen py-12">
+      <Hero />
+      <About />
     </main>
   );
 }

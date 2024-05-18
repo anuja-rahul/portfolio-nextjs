@@ -15,10 +15,17 @@
   src: url(./../assets/fonts/CoolveticaRg-Regular.woff2) format("woff2");
 }
 
+$primary-color: #ffcb74;
+$secondary-color: #181818;
+$third-color: #005b41;
+$fourth-color: #191919;
+$bg-color: #092635;
+
 * {
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  // scrollbar-width: none;
+  // &::-webkit-scrollbar {
+  //   width: 0;
+  //   height: 0;
+  // }
+  scroll-behavior: smooth !important;
 }
