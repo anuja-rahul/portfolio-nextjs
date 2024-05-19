@@ -60,6 +60,7 @@ export default function Hero() {
         </div>
 
         {/* <h1 className="title absolute">This is content</h1> */}
+        <div className="glow absolute z-10  aspect-square w-[40%] max-w-xl rounded-full blur-3xl filter md:w-[30%]" />
         {/* lg:pl-[40%] pl-[30%] sm:pl-[25%] */}
       </div>
     </section>

@@ -10,6 +10,7 @@
 //   margin-right: 0.3rem;
 // }
 
+
 .text-animate-hover._16 {
   animation-fill-mode: both;
   &:hover {
@@ -19,7 +20,7 @@
 
 .text-animate,
 .text-animate-hover {
-  text-shadow: -8px 4px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 6px -4px 5px rgba(0, 0, 0, 0.6);
   color: #efefef;
   font-family: "Coolvetica";
 }

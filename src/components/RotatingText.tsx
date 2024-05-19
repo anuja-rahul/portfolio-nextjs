@@ -40,7 +40,7 @@ export default function RotatingText() {
 
   return (
     <div className="roll-container">
-      <div className="text-wrapper pointer-events-none font-['Coolvetica'] text-[0.8rem] sm:pt-2 sm:text-[1.4rem] lg:text-[2rem]">
+      <div className="text-wrapper pointer-events-none font-['Coolvetica'] text-[0.8rem] pt-4 sm:pt-3 md:pt-2 sm:text-[1.4rem] lg:text-[2rem]">
         <span className="title-items absolute">Frontend Developer</span>
         <span className="title-items absolute">Python Developer</span>
         <span className="title-items absolute">CS Undergraduate</span>

@@ -22,7 +22,7 @@ export default function Blog() {
 
   return (
     <section id="About" className="min-h-screen">
-      <div className="section-container text-balance text-center">
+      <div className="section-container text-balance text-center pt-40">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">
           <AnimatedHero
             letterClass={letterClass}
@@ -30,6 +30,7 @@ export default function Blog() {
             idx={11}
           />
         </h1>
+        <div className="glow absolute z-10  w-[20%] aspect-square max-w-xl rounded-full blur-3xl filter" />
         <h4 className="pt-2 text-xl">Coming soon...</h4>
       </div>
     </section>
