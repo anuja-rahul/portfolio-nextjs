@@ -15,12 +15,13 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import LogoImage from "./../../../assets/images/logo-a.png";
-import "./index.scss";
 import { ActiveLink } from "./ActiveLink";
+import "./index.scss";
 
 export default function Header() {
   return (
-    <div className="nav-bar h-screen">
+    <div className="nav-container">
+      <div className="nav-bar h-screen">
       <Link className="logo" href="/">
         <Image src={LogoImage} alt="Logo" width={100} />
       </Link>
@@ -76,6 +77,7 @@ export default function Header() {
           </Link>
         </li>
       </ul>
+    </div>
     </div>
   );
 }

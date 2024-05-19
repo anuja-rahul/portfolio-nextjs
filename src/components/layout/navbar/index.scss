@@ -1,5 +1,16 @@
+.nav-container {
+  opacity: 0.8 !important;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
 .nav-bar {
-  background: #0a080f;
+  filter: blur(.3px);
+  // border-top-right-radius: 10px;
+  border-right: 1px solid rgba(255, 203, 116, 0.6);
+  background: rgba(10, 8, 15, 0.1);
   width: 65px;
   min-height: 100vh !important;
   // position: absolute;
@@ -7,6 +18,11 @@
   top: 0;
   z-index: 99;
   font-family: "coolvetica";
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: rgba(10, 8, 15, 1);
+    filter: blur(0);
+  }
 
   svg {
     color: #7d7d7d;
