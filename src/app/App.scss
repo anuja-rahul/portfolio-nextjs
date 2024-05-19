@@ -29,3 +29,8 @@ $bg-color: #092635;
   // }
   scroll-behavior: smooth !important;
 }
+
+::selection {
+  background-color: #ffcb74;
+  color: #181818;
+}
