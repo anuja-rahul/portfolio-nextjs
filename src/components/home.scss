@@ -1,0 +1,25 @@
+.section-container {
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #dadada;
+  font-family: "Coolvetica";
+  width: 100%;
+  .title {
+    // letter-spacing: 0.2rem;
+    font-size: 3.1rem;
+    .cool-letters {
+      font-family: "La Belle Aurore";
+    }
+  }
+}
+
+#Hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

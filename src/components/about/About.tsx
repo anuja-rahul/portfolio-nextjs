@@ -1,15 +1,15 @@
 import "./../index.scss";
+import "./../home.scss";
 
 export default function About() {
   return (
     <section id="About" className="min-h-screen">
-      <div className="section-container flex flex-col flex-wrap items-center justify-center">
-        <h1 className="title text-balance text-center font-bold text-white">
+      <div className="section-container text-balance text-center">
+        <h1 className="title">
           <span className="cool-letters">A</span>
           bout me
-          <br />
-          Content
         </h1>
+        <h4 className="pt-2 text-xl">Coming soon...</h4>
       </div>
     </section>
   );
