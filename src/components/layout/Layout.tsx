@@ -14,16 +14,17 @@ export default function Layout({ children }: LayoutProps) {
         <div className="page-content">
           <span className="tags all-tags top-tag-html">&lt;html&gt;</span>
           <br />
-          <span>
-          <span className="tags top-tags all-tags top-tag-body">&lt;body&gt;</span>
-            {children}
-            <span className="tags bottom-tags all-tags body-bottom mb-3">
-              &lt;/body&gt;
-            </span>
-            <br />
-            <span className="tags bottom-tags all-tags bottom-tag-html">
-              &lt;/html&gt;
-            </span>
+
+          <span className="tags top-tags all-tags top-tag-body">
+            &lt;body&gt;
+          </span>
+          {children}
+          <span className="tags bottom-tags all-tags body-bottom mb-3">
+            &lt;/body&gt;
+          </span>
+          <br />
+          <span className="tags bottom-tags all-tags bottom-tag-html">
+            &lt;/html&gt;
           </span>
         </div>
       </div>

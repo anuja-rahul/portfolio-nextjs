@@ -9,7 +9,7 @@
   font-family: "coolvetica";
 
   svg {
-    color: #7d7d7d !important;
+    color: #7d7d7d;
     &:hover {
       color: #ffcb74 !important;
     }
@@ -99,19 +99,19 @@
       }
     }
 
-    a.about-link {
+    a.about {
       &:after {
         content: "About";
       }
     }
 
-    a.blog-link {
+    a.blog {
       &:after {
         content: "Blog";
       }
     }
 
-    a.contact-link {
+    a.contact {
       &:after {
         content: "Contact";
       }
@@ -153,4 +153,8 @@
       }
     }
   }
+}
+
+.active {
+  color: #ffcb74 !important;
 }
