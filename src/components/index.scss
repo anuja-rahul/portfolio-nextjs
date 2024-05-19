@@ -1,0 +1,50 @@
+// .text-animate,
+// .text-animate-hover {
+//   font-family: "Coolvetica";
+// }
+
+// .text-animate-hover._21,
+// .text-animate._21 {
+//   font-family: "Coolvetica";
+//   font-weight: 600;
+//   margin-right: 0.3rem;
+// }
+.text-animate,
+.text-animate-hover {
+  text-shadow: -8px 4px 15px rgba(0, 0, 0, 0.5);
+  color: #efefef;
+  font-family: "Coolvetica";
+}
+
+.text-animate {
+  display: inline-block !important;
+  opacity: 0;
+  animation: jackInTheBox 1s 1s;
+  //   animation-iteration-count: 1;
+  animation-fill-mode: both;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    animation: rubberBand 1s;
+    color: #ffcb74;
+  }
+}
+
+@for $i from 1 through 33 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+@for $i from 21 through 33 {
+  .text-animate._#{$i},
+  .text-animate-hover._#{$i} {
+    font-family: "La Belle Aurore" !important;
+  }
+}

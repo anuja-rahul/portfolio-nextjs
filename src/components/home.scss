@@ -1,5 +1,5 @@
 .section-container {
-  border: 2px solid #fff;
+  // border: 2px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,18 +8,72 @@
   color: #dadada;
   font-family: "Coolvetica";
   width: 100%;
+  height: auto;
+
   .title {
+    width: 60vw;
+    // animation: bounceInDown 1.5s;
+    //   animation-fill-mode: forwards;
     // letter-spacing: 0.2rem;
-    font-size: 3.1rem;
+    // font-size: 3.1rem;
+    position: relative;
     .cool-letters {
       font-family: "La Belle Aurore";
+    }
+
+    &::before {
+      animation: bounceInDown 1.5s;
+      animation-fill-mode: forwards;
+      content: "<h1>";
+      font-family: "La Belle Aurore";
+      color: #ffcb74;
+      font-size: 1.1rem;
+      position: absolute;
+      top: -1rem;
+      margin-top: -.7rem;
+      left: auto;
+      opacity: 0.6;
+      margin-right: .5rem;
+    }
+
+    &::after {
+      animation: bounceInUp 1.5s;
+      animation-fill-mode: forwards;
+      content: "</h1>";
+      font-family: "La Belle Aurore";
+      color: #ffcb74;
+      font-size: 1.1rem;
+      position: absolute;
+      bottom: -1rem;
+      margin-left: .5rem;
+      right: auto;
+      // right: 2rem;
+      // margin-top: 2rem;
+      // margin-left: 20px;
+      // animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
     }
   }
 }
 
 #Hero {
   height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  font-family: "Coolvetica";
+}
+
+.roll-container {
+  width: 60%;
+  color: #c1c1c1;
+  font-weight: 400;
+  // font-size: 0.7rem;
+  letter-spacing: 3px;
+  margin: 0;
+  // animation: fadeIn 1s 1.8s backwards;
+  span {
+    // font-size: 2rem;
+    margin: 0;
+    line-height: 0;
+    // opacity: 0;
+  }
 }
