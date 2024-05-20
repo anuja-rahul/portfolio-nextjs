@@ -55,6 +55,7 @@ export default function Hero() {
             strArray={letterArray}
             idx={11}
           /> */}
+
           <SectionTitles
             letterArray={letterArray}
             idx={11}

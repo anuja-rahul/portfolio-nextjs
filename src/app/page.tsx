@@ -2,6 +2,7 @@ import Hero from "@/components/hero/Hero";
 import "./index.scss";
 import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
+import Projects from "@/components/projects/Projects";
 
 export const metadata = {
   title: "Anuja Rahul - Home",
@@ -12,6 +13,7 @@ export default function Home() {
     <main className="h-auto min-h-screen py-12">
       <Hero />
       <About />
+      <Projects />
       <Contact />
     </main>
   );

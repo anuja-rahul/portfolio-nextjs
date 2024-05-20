@@ -48,7 +48,7 @@
   color: #ffcb74;
   opacity: 0.8;
   font-size: 0.9rem;
-  position: sticky;
+  position: relative;
   pointer-events: none;
 }
 
@@ -57,19 +57,25 @@
   left: 5%;
 }
 .top-tag-body {
-  
   top: 2.5%;
   left: 7%;
 }
 
-.tags {
-  position: sticky;
-  opacity: 0.65;
-}
+// .top-tag-body,
+// .top-tag-html {
+// position: absolute;
+// animation: bounceInUp 1.5s !important;
+// animation-fill-mode: forwards;
+// }
+
+// .tags {
+//   position: sticky;
+//   opacity: 0.65;
+// }
 
 .body-bottom {
   bottom: 2.5%;
-  left: 7%;
+  left: 7% !important;
 }
 
 .bottom-tag-html {

@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <div className="layout w-full" data-theme="night">
         <NavBar />
-        <div className="page-content">
+        <div className="page-content py-3">
           <span className="tags all-tags top-tag-html">&lt;html&gt;</span>
           <br />
           <span className="tags top-tags all-tags top-tag-body">
