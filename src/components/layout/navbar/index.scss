@@ -9,19 +9,22 @@
 .nav-bar {
   filter: blur(.3px);
   // border-top-right-radius: 10px;
-  border-right: 1px solid rgba(255, 203, 116, 0.6);
+  border-right: 1px solid rgba(255, 203, 116, 0.3);
   background: rgba(10, 8, 15, 0.1);
-  width: 65px;
+  width: 60px;
   min-height: 100vh !important;
   // position: absolute;
   position: fixed;
   top: 0;
   z-index: 99;
   font-family: "coolvetica";
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in;
+
   &:hover {
-    background: rgba(10, 8, 15, 1);
+    border-right: 1px solid rgba(255, 203, 116, 0.6);
+    background: rgba(10, 8, 15, 0.7);
     filter: blur(0);
+    width: 65px;
   }
 
   svg {

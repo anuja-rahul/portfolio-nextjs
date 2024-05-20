@@ -10,17 +10,17 @@
 //   margin-right: 0.3rem;
 // }
 
-
 .text-animate-hover._16 {
   animation-fill-mode: both;
   &:hover {
     animation: wobble 1.4s !important;
+    
   }
 }
 
 .text-animate,
 .text-animate-hover {
-  text-shadow: 6px -4px 5px rgba(0, 0, 0, 0.6);
+  text-shadow: -6px 6px 5px rgba(0, 0, 0, 0.6) !important;
   color: #efefef;
   font-family: "Coolvetica";
 }
@@ -45,15 +45,44 @@
   }
 }
 
-@for $i from 1 through 33 {
+@for $i from 1 through 40 {
   .text-animate._#{$i} {
     animation-delay: #{$i / 10}s;
   }
 }
 
-@for $i from 21 through 33 {
+@for $i from 21 through 40 {
   .text-animate._#{$i},
   .text-animate-hover._#{$i} {
     font-family: "La Belle Aurore" !important;
+  }
+}
+
+.back-to-top-btn {
+  color: #efefef;
+
+  &:hover {
+    animation: bounce 1s;
+    animation-fill-mode: forwards;
+    color: #ffcb74;
+  }
+}
+
+.default-button {
+  min-width: 60px;
+  font-family: "La Belle Aurore";
+  z-index: 23;
+  color: #ffcb74;
+  border: 2px solid #ffcb74;
+  transition: all 1s;
+  box-shadow: -8px 7px 8px rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    animation: rubberBand 1s;
+    animation-fill-mode: both;
+    background: rgba(53, 43, 10, 0.8);
+    border: 2px solid #efefef;
+    color: #efefef;
+    box-shadow: -8px 7px 8px rgba(0, 0, 0, 0.5);
   }
 }

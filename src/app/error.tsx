@@ -1,32 +1,24 @@
+"use client";
 import DefaultButton from "@/components/DefaultButton";
 import Glow from "@/components/Glow";
 import SectionTitles from "@/components/sectionTitles/SectionTitles";
-import "./../components/index.scss";
 
-export const metadata = {
-  title: "Anuja Rahul - 404",
-};
-
-export default function NotFoundPage() {
+export default function ErrorPage() {
   const letterArray = [
-    "4",
-    "0",
-    "4",
-    " ",
-    "P",
-    "a",
-    "g",
-    "e",
-    " ",
+    "U",
+    "n",
+    "k",
     "n",
     "o",
-    "t",
-    " ",
-    "f",
-    "o",
-    "u",
+    "w",
     "n",
-    "d",
+    " ",
+    " ",
+    "E",
+    "r",
+    "r",
+    "o",
+    "r",
     " ",
     "!",
   ];
@@ -44,7 +36,7 @@ export default function NotFoundPage() {
         </h1>
         <Glow />
         {/* <div className="glow absolute z-10  w-[20%] aspect-square max-w-xl rounded-full blur-3xl filter" /> */}
-        <div className="flex flex-wrap flex-col pt-8">
+        <div className="flex flex-col flex-wrap pt-8">
           <DefaultButton href="/#Hero">Go back</DefaultButton>
         </div>
       </div>

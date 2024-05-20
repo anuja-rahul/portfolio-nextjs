@@ -1,8 +1,6 @@
-
-.glow{
+.glow {
   background-color: rgba(115, 76, 8, 0.25);
 }
-
 
 .section-container {
   // border: 2px solid #fff;
@@ -87,8 +85,55 @@
   span {
     margin: 0;
     line-height: 0;
-    text-shadow: 4px -6px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: -4px 6px 5px rgba(0, 0, 0, 0.6);
     // font-size: 2rem;
     // opacity: 0;
+  }
+}
+
+.paragraphs {
+  z-index: 22;
+  padding-left: 3rem;
+  height: auto;
+  width: 80%;
+  text-align: center !important;
+
+  .about-text {
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+    font-family: "Coolvetica";
+  }
+
+  &::before {
+    animation: bounceInDown 1.5s;
+    animation-fill-mode: forwards;
+    content: "<p>";
+    font-family: "La Belle Aurore";
+    color: #ffcb74;
+    // font-size: 1rem;
+    position: relative;
+    top: 0.5rem;
+    margin-top: -0.7rem;
+    left: -50%;
+    opacity: 0.6;
+    margin-right: 0.5rem;
+  }
+
+  &::after {
+    animation: bounceInUp 1.5s;
+    animation-fill-mode: forwards;
+    content: "</p>";
+    font-family: "La Belle Aurore";
+    color: #ffcb74;
+    // font-size: 1rem;
+    position: relative;
+    bottom: -1rem;
+    margin-left: 0.5rem;
+    right: -50%;
+    // right: 2rem;
+    // margin-top: 2rem;
+    // margin-left: 20px;
+    // animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
   }
 }
