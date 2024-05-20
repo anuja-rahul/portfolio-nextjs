@@ -24,7 +24,7 @@
 
 [![Project-Type](https://img.shields.io/badge/Project%20type-Fullstack-darkblue.svg)](https://github.com/anuja-rahul/portfolio-nextjs)
 &nbsp;  
-[![Project-Status](https://img.shields.io/badge/Project%20Status-getting_started-yellow.svg)](https://github.com/anuja-rahul/portfolio-nextjs)
+[![Project-Status](https://img.shields.io/badge/Project%20Status-working_on_blog_page-yellow.svg)](https://github.com/anuja-rahul/portfolio-nextjs)
 &nbsp;  
 [![Project-Version](https://img.shields.io/badge/Version-v0.1-green.svg)](https://github.com/anuja-rahul/portfolio-nextjs)
 
