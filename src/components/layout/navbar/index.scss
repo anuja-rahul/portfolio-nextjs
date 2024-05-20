@@ -7,7 +7,7 @@
 }
 
 .nav-bar {
-  filter: blur(.3px);
+  filter: blur(0.3px);
   // border-top-right-radius: 10px;
   border-right: 1px solid rgba(255, 203, 116, 0.3);
   background: rgba(10, 8, 15, 0.1);
@@ -67,8 +67,8 @@
       font-size: 1.2rem;
       color: #4d4d4e;
       display: block;
-      line-height: 51px;
-      height: 51px;
+      line-height: 2.5rem;
+      height: 2.5rem;
       position: relative;
       text-decoration: none;
 
@@ -124,15 +124,21 @@
       }
     }
 
-    a.blog {
+    a.projects {
       &:after {
-        content: "Blog";
+        content: "Projects";
       }
     }
 
     a.contact {
       &:after {
         content: "Contact";
+      }
+    }
+
+    a.blog {
+      &:after {
+        content: "Blog";
       }
     }
 
@@ -153,14 +159,13 @@
     margin: 0;
 
     li {
+      padding: 0.35rem 0;
+      display: block;
+      // font-size: 0.8rem ;
+      line-height: 0.8rem;
       a {
-        padding: 7px 0;
-        display: block;
-        font-size: 15px;
-        line-height: 16px;
-
         svg {
-          width: 1.5rem;
+          width: 1rem;
           margin-left: 1.2rem;
           transition: all 0.3s ease-out;
         }

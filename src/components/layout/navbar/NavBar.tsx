@@ -6,6 +6,7 @@ import {
   faEnvelope,
   faHome,
   faPen,
+  faProjectDiagram,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -31,6 +32,9 @@ export default function Header() {
           </ActiveLink>
           <ActiveLink className="about" href="/#About">
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          </ActiveLink>
+          <ActiveLink className="projects" href="/#Projects">
+            <FontAwesomeIcon icon={faProjectDiagram} color="#4d4d4e" />
           </ActiveLink>
           <ActiveLink className="contact" href="/#Contact">
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
