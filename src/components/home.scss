@@ -138,3 +138,46 @@
   }
 }
 
+.tech-container,
+.experience-container {
+  z-index: 25 !important;
+
+  // .role-description{
+  //   text-align: left;
+  // }
+
+  .tech-description {
+    color: rgb(199, 199, 199);
+  }
+
+  .tech-icons {
+    opacity: 0.9;
+    background: rgba(228, 158, 18, 0.2);
+  }
+
+  .Python {
+    background: rgba(42, 9, 189, 0.65) !important;
+  }
+  .Java {
+    background: rgba(248, 152, 32, 0.65) !important;
+  }
+  .HTML {
+    background: rgba(227, 79, 38, 0.65) !important;
+  }
+  .CSS {
+    background: rgba(38, 77, 228, 0.65) !important;
+  }
+  .Javascript {
+    background: rgba(240, 219, 79, 0.65) !important;
+  }
+
+  .role {
+    // font-family: "La Belle Aurore";
+    font-size: 0.9rem;
+    span {
+      font-family: "Coolvetica" !important;
+      letter-spacing: 0.1rem;
+      color: #ffcb74;
+    }
+  }
+}
