@@ -11,12 +11,14 @@ interface SectionTitlesProps {
   idx?: number;
   href: string;
   btn: boolean;
+  className?:string
 }
 
 export default function SectionTitles({
   letterArray,
   idx,
   btn,
+  className,
   ...rest
 }: SectionTitlesProps) {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -38,6 +40,7 @@ export default function SectionTitles({
         letterClass={letterClass}
         strArray={letterArray}
         idx={!idx ? 21 : idx}
+        className={className}
       />
 
       {btn ? <BackToTopButton {...rest} /> : ""}

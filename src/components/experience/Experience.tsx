@@ -8,7 +8,7 @@ export default function Experience() {
   const letterArray = ["E", "x", "p", "e", "r", "i", "e", "n", "c", "e"];
 
   return (
-    <section id="Projects" className="min-h-screen pt-12">
+    <section id="Experience" className="min-h-screen pt-12">
       <div className="section-container text-balance text-center">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">
           <SectionTitles

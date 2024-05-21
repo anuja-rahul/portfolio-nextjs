@@ -6,15 +6,16 @@ interface AnimatedHeroProps {
   letterClass: string;
   strArray: string[];
   idx: number;
+  className?: string;
 }
 
-const AnimatedHero = ({ letterClass, strArray, idx }: AnimatedHeroProps) => {
+const AnimatedHero = ({ letterClass, strArray, idx, className }: AnimatedHeroProps) => {
   return (
     <span className="animated-container text-4xl sm:text-5xl lg:text-6xl">
       {strArray.map((char, i) => (
         <span
           key={char + i}
-          className={clsx(`${letterClass} _${i + idx}`, "each-char")}
+          className={clsx(`${letterClass} _${i + idx}`, "each-char", className)}
         >
           {char}
         </span>

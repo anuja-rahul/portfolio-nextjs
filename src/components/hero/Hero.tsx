@@ -62,6 +62,7 @@ export default function Hero() {
             href="#Hero"
             btn={true}
           />
+          {/* bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent */}
         </h1>
         <Glow />
         <div className="z-40 flex w-full flex-col flex-wrap justify-evenly pt-1  text-center sm:pt-4">
@@ -69,10 +70,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col flex-wrap pt-16">
-          <DefaultButton
-            href="#About"
-            className="hover:after:content-['_➤']"
-          >
+          <DefaultButton href="#About" className="hover:after:content-['_➤']">
             Explore
           </DefaultButton>
         </div>
