@@ -23,7 +23,7 @@ export default function Experience() {
         <Glow />
         {/* <h4 className="pt-2 text-xl">Coming soon...</h4> */}
 
-        <div className="experience-container ml-16 w-[60%] border-b border-neutral-900 pb-4">
+        <div className="experience-container ml-16 w-[60%] border-b border-[#ffcb74] pb-4">
           <div>
             {Experiences.map((experience, index) => (
               <div

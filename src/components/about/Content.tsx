@@ -13,7 +13,7 @@ export default function Content() {
             code. */}
       </p>
       <p className="about-text text-2 text-balance text-center text-[0.5rem] sm:text-[0.7rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.3rem]">
-      {/* bg-gradient-to-r from-white via-blue-700 to-white bg-clip-text tracking-tight text-transparent */}
+        {/* bg-gradient-to-r from-white via-blue-700 to-white bg-clip-text tracking-tight text-transparent */}
         {/* Frontend Magic 🌐 :  */}
         🌐 I specialize in creating delightful user experiences using HTML, CSS,
         and JavaScript/TypeScript.
