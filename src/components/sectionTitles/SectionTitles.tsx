@@ -24,7 +24,7 @@ export default function SectionTitles({
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 4000);
+    }, 4300);
 
     // Return a cleanup function to clear the timeout when the component unmounts
     return () => {

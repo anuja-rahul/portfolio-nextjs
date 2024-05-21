@@ -12,6 +12,8 @@ export default function NotFoundPage() {
     "4",
     "0",
     "4",
+    ":",
+    "😵",
     " ",
     "P",
     "a",
@@ -44,8 +46,10 @@ export default function NotFoundPage() {
         </h1>
         <Glow />
         {/* <div className="glow absolute z-10  w-[20%] aspect-square max-w-xl rounded-full blur-3xl filter" /> */}
-        <div className="flex flex-wrap flex-col pt-8">
-          <DefaultButton href="/#Hero">Go back</DefaultButton>
+        <div className="flex flex-col flex-wrap pt-8">
+          <DefaultButton href="/#Hero" className="hover:before:content-['👈_']">
+            Back to Home
+          </DefaultButton>
         </div>
       </div>
     </section>

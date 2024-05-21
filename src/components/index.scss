@@ -47,13 +47,13 @@
   }
 }
 
-@for $i from 1 through 40 {
+@for $i from 1 through 42 {
   .text-animate._#{$i} {
     animation-delay: #{$i / 10}s;
   }
 }
 
-@for $i from 21 through 40 {
+@for $i from 21 through 42 {
   .text-animate._#{$i},
   .text-animate-hover._#{$i} {
     font-family: "La Belle Aurore" !important;
@@ -86,5 +86,10 @@
     border: 2px solid #efefef;
     color: #efefef;
     box-shadow: -8px 7px 8px rgba(0, 0, 0, 0.5);
+
+    &::before,
+    &::after {
+      color: #efefef;
+    }
   }
 }

@@ -69,7 +69,12 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col flex-wrap pt-16">
-          <DefaultButton href="#About">Explore</DefaultButton>
+          <DefaultButton
+            href="#About"
+            className="hover:after:content-['_➤']"
+          >
+            Explore
+          </DefaultButton>
         </div>
 
         {/* <h1 className="title absolute">This is content</h1> */}

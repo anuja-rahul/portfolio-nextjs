@@ -15,7 +15,7 @@ export default function DefaultButton({
 }: DefaultButtonProps) {
   return (
     <Link {...rest} className={clsx(className, "default-button rounded-full text-md sm:text-[1rem] p-2 sm:px-3 md:text-xl")}>
-      {children}
+      <span className="children">{children}</span>
     </Link>
   );
 }
