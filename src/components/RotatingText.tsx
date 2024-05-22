@@ -8,7 +8,7 @@ import "./home.scss";
 export default function RotatingText() {
   useGSAP(() => {
     const titles = gsap.utils.toArray(".title-items");
-    const tl = gsap.timeline({ repeat: -1, delay: 2.4 });
+    const tl = gsap.timeline({ repeat: -1, delay: 1.5 });
 
     titles.forEach((letter) => {
       const splitTitles = new SplitTextJS(letter);

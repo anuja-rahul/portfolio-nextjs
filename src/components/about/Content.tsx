@@ -1,6 +1,35 @@
+"use client";
+
 import "./../home.scss";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Content() {
+
+
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      ".about-text",
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power2.inOut",
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".about-text",
+          start: "top bottom-=35%",
+          toggleActions: "play pause resume reverse",
+        },
+      },
+    );
+  }, [".about-text"]);
+
+
   return (
     <div className="paragraphs flex flex-col flex-wrap justify-center text-balance pt-4  before:text-[0.6rem] after:text-[0.6rem] before:md:text-[1rem] after:md:text-[1rem]">
       <p className="about-text text-2 text-balance pt-4 text-center text-[0.5rem] sm:text-[0.7rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.3rem]">

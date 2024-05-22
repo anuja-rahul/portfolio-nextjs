@@ -1,12 +1,9 @@
 import "./../index.scss";
 import "./../home.scss";
 import RotatingText from "./../RotatingText";
-import AnimatedHero from "./../AnimatedHero";
-import { useEffect, useState } from "react";
-import BackToTopButton from "../BackToTopButton";
 import SectionTitles from "../sectionTitles/SectionTitles";
 import Glow from "../Glow";
-import DefaultButton from "../DefaultButton";
+import AnimatedContent from "./AnimatedContent";
 
 export default function Hero() {
   const letterArray = [
@@ -45,7 +42,10 @@ export default function Hero() {
   // }, []);
 
   return (
-    <section id="Hero" className="mx-6 ml-10 min-h-[70vh] pt-40">
+    <section
+      id="Hero"
+      className="mx-6 ml-10 flex min-h-[70vh] flex-wrap items-center justify-center pt-40"
+    >
       <div className="section-container z-10 text-balance text-center">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">
           {/* Hello👋 I{"'"}m <span className="cool-letters">A</span>
@@ -70,9 +70,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col flex-wrap pt-16">
-          <DefaultButton href="#About" className="hover:after:content-['_➤']">
-            Explore
-          </DefaultButton>
+          <AnimatedContent />
         </div>
 
         {/* <h1 className="title absolute">This is content</h1> */}

@@ -11,7 +11,7 @@ interface SectionTitlesProps {
   idx?: number;
   href: string;
   btn: boolean;
-  className?:string
+  className?: string;
 }
 
 export default function SectionTitles({
