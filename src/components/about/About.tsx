@@ -9,7 +9,7 @@ export default function About() {
   const letterArray = ["A", "b", "o", "u", "t", " ", "m", "e"];
 
   return (
-    <section id="About" className="min-h-screen pt-12">
+    <section id="About" className="min-h-screen pt-12 ml-12">
       <div className="section-container text-balance text-center">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">
           {/* <AnimatedHero

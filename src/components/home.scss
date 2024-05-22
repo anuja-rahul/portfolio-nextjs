@@ -93,7 +93,7 @@
 
 .paragraphs {
   z-index: 22;
-  padding-left: 3rem;
+  padding-left: 1rem;
   height: auto;
   width: 80%;
   text-align: center !important;
@@ -153,12 +153,21 @@
   .tech-icons {
     opacity: 0.9;
     background: rgba(228, 158, 18, 0.2);
+    color: #f1f1f1;
+  }
+
+  .tech-logos {
+    &:hover {
+      animation: wobble 1s;
+      animation-fill-mode: forwards;
+    }
   }
 
   .Python {
-    background: rgba(42, 9, 189, 0.65) !important;
+    background: rgba(18, 132, 247, 0.65) !important;
   }
-  .Java {
+  .Java,
+  .SQL {
     background: rgba(248, 152, 32, 0.65) !important;
   }
   .HTML {
@@ -167,8 +176,32 @@
   .CSS {
     background: rgba(38, 77, 228, 0.65) !important;
   }
+  .SCSS {
+    background: rgba(236, 46, 217, 0.65) !important;
+  }
   .Javascript {
     background: rgba(240, 219, 79, 0.65) !important;
+  }
+  .Typescript {
+    background: rgba(79, 146, 240, 0.65) !important;
+  }
+  .React {
+    background: rgba(60, 195, 248, 0.65) !important;
+  }
+  .Vite {
+    background: rgba(79, 79, 240, 0.65) !important;
+  }
+  .Nextjs {
+    background: rgba(13, 3, 100, 0.65) !important;
+  }
+  .Tailwindcss {
+    background: rgba(70, 188, 247, 0.65) !important;
+  }
+  .GSAP {
+    background: rgba(106, 237, 92, 0.65) !important;
+  }
+  .Arduino {
+    background: rgba(53, 242, 220, 0.65) !important;
   }
 
   .role {

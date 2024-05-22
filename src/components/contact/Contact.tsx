@@ -8,7 +8,7 @@ export default function Contact() {
   const letterArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"];
 
   return (
-    <section id="Contact" className="min-h-screen pt-12">
+    <section id="Contact" className="min-h-screen pt-12 ml-10">
       <div className="section-container text-balance text-center">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">
           <SectionTitles

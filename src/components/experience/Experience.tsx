@@ -7,10 +7,30 @@ import { Experiences } from "./content";
 import clsx from "clsx";
 
 export default function Experience() {
-  const letterArray = ["E", "x", "p", "e", "r", "i", "e", "n", "c", "e"];
+  const letterArray = [
+    "S",
+    "k",
+    "i",
+    "l",
+    "l",
+    "s",
+    " ",
+    "&",
+    " ",
+    "E",
+    "x",
+    "p",
+    "e",
+    "r",
+    "i",
+    "e",
+    "n",
+    "c",
+    "e",
+  ];
 
   return (
-    <section id="Experience" className="min-h-screen pt-12">
+    <section id="Experience" className="ml-12 min-h-screen pt-12">
       <div className="section-container text-balance text-center">
         <h1 className="title z-40 mb-8 text-4xl sm:text-5xl lg:text-6xl">
           <SectionTitles
@@ -23,7 +43,7 @@ export default function Experience() {
         <Glow />
         {/* <h4 className="pt-2 text-xl">Coming soon...</h4> */}
 
-        <div className="experience-container ml-16 w-[60%] border-b border-[#ffcb74] pb-4">
+        <div className="experience-container  w-[60%] border-b border-[#ffcb74] pb-4">
           <div>
             {Experiences.map((experience, index) => (
               <div

@@ -45,7 +45,7 @@ export default function Hero() {
   // }, []);
 
   return (
-    <section id="Hero" className="min-h-[70vh] pt-40">
+    <section id="Hero" className="mx-6 ml-10 min-h-[70vh] pt-40">
       <div className="section-container z-10 text-balance text-center">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">
           {/* Hello👋 I{"'"}m <span className="cool-letters">A</span>

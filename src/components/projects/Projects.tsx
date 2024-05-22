@@ -8,7 +8,7 @@ export default function Projects() {
   const letterArray = ["P", "r", "o", "j", "e", "c", "t", "s"];
 
   return (
-    <section id="Projects" className="min-h-screen pt-12">
+    <section id="Projects" className="min-h-screen pt-12 ml-10">
       <div className="section-container text-balance text-center">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">
           <SectionTitles
