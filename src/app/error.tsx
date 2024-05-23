@@ -39,7 +39,7 @@ export default function ErrorPage() {
         <Glow />
         {/* <div className="glow absolute z-10  w-[20%] aspect-square max-w-xl rounded-full blur-3xl filter" /> */}
         <div className="flex flex-col flex-wrap pt-8">
-        <DefaultButton href="/#Hero" className="hover:before:content-['👈_']">
+          <DefaultButton href="/#Hero" className="hover:before:content-['👈_']">
             Back to Home
           </DefaultButton>
         </div>
