@@ -1,11 +1,30 @@
+.explore-btn-slide {
+  font-family: "La Belle Aurore";
+  padding: 0.5rem;
+  background: rgba(116, 76, 9, 0.8);
+  border-radius: 999px;
+  border: 2px solid #c1c1c1;
+  transition: 0.6s;
+  box-shadow: -8px 7px 8px rgba(0, 0, 0, 0.35);
+
+  &:hover {
+    animation: rubberBand 1s;
+    animation-fill-mode: forwards;
+    box-shadow: -8px 7px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
 .embla {
+  z-index: 26;
   max-width: 40rem;
   margin: auto;
-  --slide-height: 20rem;
+  --slide-height: 27rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
   margin-right: 2rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
+
+  border: 1px solid rgba(226, 173, 80, 0.6);
 }
 .embla__viewport {
   overflow: hidden;
@@ -20,11 +39,32 @@
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
+  transition: 0.6s;
+  // border: 1px solid rgba(226, 173, 80, 0.6);
+  // border-radius: 1.8rem;
+
+  &:hover {
+    .embla__slide__img {
+      filter: grayscale(100%);
+      scale: 1.05;
+    }
+    .slide-content {
+      opacity: 1;
+    }
+  }
+
+  // &:hover {
+  //   .slide-content {
+  //     opacity: 1;
+  //     transition: 1s;
+  //   }
+  // }
 }
 .embla__slide__img {
+  transition: 1s;
   border-radius: 1.8rem;
   display: block;
-  height: var(--slide-height);
+  max-height: var(--slide-height);
   width: 100%;
   object-fit: cover;
 }
@@ -54,8 +94,8 @@
   padding: 0;
   margin: 0;
   box-shadow: inset 0 0 0 0.1rem rgb(234, 234, 234);
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   z-index: 1;
   border-radius: 50%;
   color: var(--text-body);
@@ -89,9 +129,9 @@
   border: 0;
   padding: 0;
   margin: 0;
-  width: 1rem;
-  height: 1rem;
-  margin-right: .2rem;
+  // width: 1rem;
+  // height: 1rem;
+  margin-right: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,13 +139,12 @@
 }
 .embla__dot:after {
   box-shadow: inset 0 0 0 0.2rem var(rgb(25, 25, 25)) !important;
-  width: 1rem;
-  height: 1rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   content: "";
-  
 }
 .embla__dot--selected:after {
   box-shadow: inset 0 0 0 0.8rem var(rgb(222, 222, 222)) !important;

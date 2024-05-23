@@ -17,6 +17,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 
+// import Image__0 from "./../../../assets/images/slide__0.png"
+// import Image__1 from "./../../../assets/images/slide__1.png"
+// import Image__2 from "./../../../assets/images/slide__2.png"
+// import Image__3 from "./../../../assets/images/slide__3.png"
+// import Image__4 from "./../../../assets/images/slide__4.png"
+
+
 const TWEEN_FACTOR_BASE = 0.2;
 
 type PropType = {
@@ -27,7 +34,7 @@ type PropType = {
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: true, delay: 2500 }),
+    Autoplay({ playOnInit: true, delay: 4500 }),
   ]);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
@@ -108,25 +115,30 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, setTweenFactor, setTweenNodes, tweenParallax]);
 
   return (
-    <div className="embla">
+    <div className="embla p-4 rounded-3xl">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((link, index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer">
-                  <Link
-                    href={index}
-                    className="explore-btn z-35 absolute bottom-[10%] w-[4rem] border bg-slate-700 text-white"
-                  >
-                    Go
-                  </Link>
+                  {/* <div className="slide-content z-35 "> */}
+                    <Link
+                      href={link}
+                      className="explore-btn-slide z-40 absolute bottom-[1.5rem] right-[1rem] text-white rounded-full"
+                    >
+                      Explore this site
+                    </Link>
+                  {/* </div> */}
+
                   <Image
                     className="embla__slide__img embla__parallax__img"
-                    src={`https://picsum.photos/600/350?v=${index}`}
+                    // src={`/__${index}`}
+                    src={`/slide__${index}.png`}
+                    
                     alt="Your alt text"
-                    width={800}
-                    height={800}
+                    width={1280}
+                    height={720}
                   />
                 </div>
               </div>
@@ -146,7 +158,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
+              className={"embla__dot w-[0.5rem] h-[0.5rem] mb-2".concat(
                 index === selectedIndex ? " embla__dot--selected" : "",
               )}
             />

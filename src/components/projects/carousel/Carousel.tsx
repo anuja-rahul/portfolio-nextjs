@@ -8,7 +8,13 @@ export default function Carousel() {
 
   //   const SLIDE_COUNT = 5;
   //   const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-  const SLIDES = ["https://anuja-rahul-portfolio.vercel.app", "2", "3"];
+  const SLIDES = [
+    "https://glisten-ai-remade.vercel.app",
+    "https://shop-nextjs-alpha.vercel.app",
+    "https://anuja-rahul.github.io/apple-website/",
+    "https://anuja-rahul-portfolio.vercel.app",
+    "https://iphone-3d-demo-website.vercel.app",
+  ];
 
   return <EmblaCarousel slides={SLIDES} options={OPTIONS} />;
 }
