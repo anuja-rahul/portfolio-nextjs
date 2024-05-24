@@ -41,11 +41,11 @@ export default function RotatingText() {
   return (
     <div className="roll-container">
       <div className="text-wrapper pt-4 font-['Coolvetica'] text-[0.8rem] sm:pt-3 sm:text-[1.4rem] md:pt-2 lg:text-[2rem]">
-        <span className="title-items absolute">Frontend Developer</span>
-        <span className="title-items absolute">Python Developer</span>
+        <span className="title-items absolute opacity-1">Frontend Developer</span>
+        <span className="title-items absolute opacity-1">Python Developer</span>
         {/* <span className="title-items absolute">Content Creator</span> */}
-        <span className="title-items absolute">Graphic Designer</span>
-        <span className="title-items absolute">CS Undergraduate</span>
+        <span className="title-items absolute opacity-1">Graphic Designer</span>
+        <span className="title-items absolute opacity-1">CS Undergraduate</span>
       </div>
     </div>
   );

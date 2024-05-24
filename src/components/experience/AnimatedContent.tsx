@@ -12,17 +12,17 @@ export default function AnimatedContent() {
   useGSAP(() => {
     gsap.fromTo(
       ".load",
-      { y: 200, opacity: 0 },
+      { y: 100, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         ease: "power2.inOut",
-        duration: 1.5,
-        stagger: 0.06,
+        duration: 1.2,
+        stagger: 0.05,
 
         scrollTrigger: {
           trigger: ".experience-container",
-          start: "top bottom-=35%",
+          start: "top bottom-=25%",
           toggleActions: "play pause resume reverse",
         },
       },

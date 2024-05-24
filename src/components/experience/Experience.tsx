@@ -29,7 +29,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="Experience" className="ml-12 min-h-screen pt-12">
+    <section id="Experience" className="ml-12 mb-12 pt-12">
       <div className="section-container text-balance text-center">
         <h1 className="title z-40 mb-8 text-4xl sm:text-5xl lg:text-6xl">
           <SectionTitles

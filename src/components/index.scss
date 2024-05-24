@@ -70,18 +70,17 @@
   }
 }
 
-.default-button {
-  opacity: 0;
+.common-button {
   min-width: 60px;
   font-family: "La Belle Aurore";
   z-index: 23;
   color: #ffcb74;
   border: 2px solid #ffcb74;
-  transition: all 1s;
+  // transition: all 1s;
   box-shadow: -8px 7px 8px rgba(0, 0, 0, 0.4);
 
   &:hover {
-    animation: rubberBand 1s;
+    animation: rubberBand 1s !important;
     animation-fill-mode: both;
     background: rgba(53, 43, 10, 0.8);
     border: 2px solid #efefef;
@@ -95,13 +94,7 @@
   }
 }
 
-.embla__viewport {
-  overflow: hidden !important;
+.default-button {
+  opacity: 0;
 }
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
+

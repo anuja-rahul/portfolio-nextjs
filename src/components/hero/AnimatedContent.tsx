@@ -32,7 +32,7 @@ export default function AnimatedContent() {
   return (
     <DefaultButton
       href="#About"
-      className="explore-btn hover:after:content-['_➤']"
+      className="explore-btn hover:after:content-['_➤'] opacity-0"
     >
       Explore
     </DefaultButton>

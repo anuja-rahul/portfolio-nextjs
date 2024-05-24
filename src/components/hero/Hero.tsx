@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <section
       id="Hero"
-      className="mx-6 ml-10 flex min-h-[70vh] flex-wrap items-center justify-center pt-40"
+      className="mx-6 ml-10 flex mb-60 flex-wrap items-center justify-center pt-40"
     >
       <div className="section-container z-10 text-balance text-center">
         <h1 className="title z-40 text-4xl sm:text-5xl lg:text-6xl">

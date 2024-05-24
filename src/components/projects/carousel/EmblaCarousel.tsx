@@ -23,7 +23,6 @@ import Autoplay from "embla-carousel-autoplay";
 // import Image__3 from "./../../../assets/images/slide__3.png"
 // import Image__4 from "./../../../assets/images/slide__4.png"
 
-
 const TWEEN_FACTOR_BASE = 0.2;
 
 type PropType = {
@@ -115,7 +114,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, setTweenFactor, setTweenNodes, tweenParallax]);
 
   return (
-    <div className="embla p-4 rounded-3xl">
+    <div className="embla rounded-3xl p-4">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((link, index) => (
@@ -123,20 +122,19 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <div className="embla__parallax">
                 <div className="embla__parallax__layer">
                   {/* <div className="slide-content z-35 "> */}
-                    <Link
-                      href={link}
-                      className="explore-btn-slide z-40 absolute bottom-[1.5rem] right-[1rem] text-white rounded-full"
-                    >
-                      Explore this site
-                    </Link>
+                  <Link
+                    href={link}
+                    className="explore-btn-slide absolute bottom-[1.5rem] right-[1rem] z-40 rounded-full text-white"
+                  >
+                    Explore this site
+                  </Link>
                   {/* </div> */}
 
                   <Image
                     className="embla__slide__img embla__parallax__img"
                     // src={`/__${index}`}
                     src={`/slide__${index}.png`}
-                    
-                    alt="Your alt text"
+                    alt={`image-slide__${index}`}
                     width={1280}
                     height={720}
                   />
@@ -158,7 +156,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={"embla__dot w-[0.5rem] h-[0.5rem] mb-2".concat(
+              className={"embla__dot mb-2 h-[0.5rem] w-[0.5rem]".concat(
                 index === selectedIndex ? " embla__dot--selected" : "",
               )}
             />

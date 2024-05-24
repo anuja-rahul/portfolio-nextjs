@@ -22,7 +22,7 @@ export default function Content() {
         stagger: 0.2,
         scrollTrigger: {
           trigger: ".about-text",
-          start: "top bottom-=35%",
+          start: "top bottom-=30%",
           toggleActions: "play pause resume reverse",
         },
       },
