@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout/Layout";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { env } from "./lib/env";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +30,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Layout>{children}</Layout>
       </body>
+      <GoogleAnalytics gaId={env.MEASUREMENT_ID} />
     </html>
   );
 }
