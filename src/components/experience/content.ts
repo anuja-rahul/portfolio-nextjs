@@ -35,7 +35,7 @@ export const Experiences = [
     tecnologies: ["Python", "MariaDB"],
   },
   {
-    year: "2021 - 2023",
+    year: "2019 - 2022",
     role: "GCE AL's",
     Institution: "Bandaranayake College",
     description:
