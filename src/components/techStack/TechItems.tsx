@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   SiCss3,
+  SiFastapi,
   SiGreensock,
   SiHtml5,
   SiJavascript,
@@ -85,6 +86,9 @@ export default function TechItems() {
       </div>
       <div className="tech-logos rounded-full border-[0px] border-[#43e240] p-2 md:p-3 lg:p-4">
         <SiSpringsecurity className="h-auto w-5 text-7xl text-green-500 sm:w-6 md:w-8 lg:w-12" />
+      </div>
+      <div className="tech-logos rounded-full border-[0px] border-[#44ddce] p-2 md:p-3 lg:p-4">
+        <SiFastapi className="h-auto w-5 text-7xl text-teal-500 sm:w-6 md:w-8 lg:w-12" />
       </div>
     </div>
   );
