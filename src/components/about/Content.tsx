@@ -33,7 +33,7 @@ export default function Content() {
   return (
     <div className="paragraphs flex flex-col flex-wrap justify-center text-balance pt-4  before:text-[0.6rem] after:text-[0.6rem] before:md:text-[1rem] after:md:text-[1rem]">
       <p className="about-text text-2 text-balance pt-4 text-center text-[0.5rem] sm:text-[0.7rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.3rem]">
-        Hi there! 👋 I{"'"}m a passionate junior frontend web developer, a
+        Hi there! 👋 I{"'"}m a passionate junior fullstack developer, a
         Python enthusiast, and a computer science undergraduate student.
         {/* My
             journey in the tech world began with curiosity and a love for
@@ -64,6 +64,11 @@ export default function Content() {
         code-hungry bookworm.
         {/* Algorithms, databases, software engineering, I
             devour it all like a code-hungry bookworm. */}
+      </p>
+      <p className="about-text text-4 text-balance text-center text-[0.5rem] sm:text-[0.7rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.3rem]">
+      🚀 Recently, I{"'"}ve been diving deep into the Java Spring Framework—integrating concurrency into my project backends 
+      and exploring the boundaries of Java as a programming language.
+
       </p>
       <p className="about-text text-5 text-balance text-center text-[0.5rem] sm:text-[0.7rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.3rem]">
         {/* Let{"'"}s Collaborate 🚀 :  */}
