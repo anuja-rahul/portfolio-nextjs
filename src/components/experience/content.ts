@@ -3,16 +3,14 @@ export const Experiences = [
     year: "2023 - Present",
     role: "Computer Science Undergraduate",
     Institution: "IIT(Uow)",
-    description:
-      "",
+    description: "",
     tecnologies: ["Python", "Java", "HTML", "CSS", "Javascript"],
   },
   {
     year: "2023 - Present",
     role: "Frontend Developer",
     Institution: "Freelance",
-    description:
-      "",
+    description: "",
     tecnologies: [
       "Javascript",
       "CSS",
@@ -30,16 +28,14 @@ export const Experiences = [
     year: "2021 - Present",
     role: "Python Developer",
     Institution: "Open Source",
-    description:
-      "",
+    description: "",
     tecnologies: ["Python", "MariaDB"],
   },
   {
     year: "2019 - 2022",
     role: "GCE AL's",
     Institution: "Bandaranayake College",
-    description:
-      "",
+    description: "",
     tecnologies: ["Python", "Arduino", "SQL", "HTML", "CSS"],
   },
 ];
