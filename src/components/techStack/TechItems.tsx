@@ -13,6 +13,8 @@ import {
   SiPython,
   SiReact,
   SiSass,
+  SiSpring,
+  SiSpringsecurity,
   SiTailwindcss,
   SiTypescript,
   SiVite,
@@ -77,6 +79,12 @@ export default function TechItems() {
       </div>
       <div className="tech-logos rounded-full border-[0px] border-[#ffcb74] p-2 md:p-3 lg:p-4">
         <SiJavascript className="h-auto w-5 text-7xl text-yellow-500 sm:w-6 md:w-8 lg:w-12" />
+      </div>
+      <div className="tech-logos rounded-full border-[0px] border-[#43e240] p-2 md:p-3 lg:p-4">
+        <SiSpring className="h-auto w-5 text-7xl text-green-500 sm:w-6 md:w-8 lg:w-12" />
+      </div>
+      <div className="tech-logos rounded-full border-[0px] border-[#43e240] p-2 md:p-3 lg:p-4">
+        <SiSpringsecurity className="h-auto w-5 text-7xl text-green-500 sm:w-6 md:w-8 lg:w-12" />
       </div>
     </div>
   );

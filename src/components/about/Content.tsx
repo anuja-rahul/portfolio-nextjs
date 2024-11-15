@@ -66,7 +66,7 @@ export default function Content() {
             devour it all like a code-hungry bookworm. */}
       </p>
       <p className="about-text text-4 text-balance text-center text-[0.5rem] sm:text-[0.7rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.3rem]">
-      🚀 Recently, I{"'"}ve been diving deep into the Java Spring Framework—integrating concurrency into my project backends 
+      💻 Recently, I{"'"}ve been diving deep into the Java Spring Framework integrating concurrency into my project backends 
       and exploring the boundaries of Java as a programming language.
 
       </p>
